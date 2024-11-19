@@ -37,6 +37,7 @@
   <PropertyGroup>
     <SignKey>$(AssemblyOriginatorKeyFile)</SignKey>
     <Assembly>$(SolutionDir)Klarna.Rest.Core/$(OutputPath)/$(TargetFramework)/$(AssemblyName).dll</Assembly>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
   <Choose>
     <When Condition=" '$(Configuration)'=='Debug' And !Exists('$(SignKey)') ">
